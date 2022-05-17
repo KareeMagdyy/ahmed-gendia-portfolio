@@ -227,6 +227,7 @@ header .container {
 
 /* hero start */
 .hero {
+  position: relative;
   margin-top: 65px;
   background: rgb(225, 107, 69);
   /* background: linear-gradient(
@@ -236,7 +237,7 @@ header .container {
   ); */
   text-align: center;
   padding: 3rem 0;
-  min-height: calc(100vh - 65px);
+  height: calc(100vh - 100px);
   position: relative;
   overflow: hidden;
 }
@@ -253,6 +254,12 @@ header .container {
 
 .hero .container {
   margin-top: 100px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero .section-head h1 {
@@ -260,6 +267,14 @@ header .container {
   font-weight: 700;
   font-size: 2.25rem;
   line-height: 1.4;
+}
+
+.hero-left {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-right {
@@ -275,6 +290,9 @@ header .container {
 /* About Start */
 .about {
   text-align: center;
+  position: relative;
+  margin-top: 0;
+  padding-top: 15rem;
 }
 
 .about h2 {
@@ -588,9 +606,7 @@ footer .container .col:nth-child(1) p {
   }
 
   .hero .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
     gap: 3rem;
   }
 
@@ -600,11 +616,14 @@ footer .container .col:nth-child(1) p {
   }
 
   .hero-left {
+    height: auto;
+    display: block;
     text-align: start;
     width: 50%;
   }
 
   .hero-right {
+    height: auto;
     display: block;
     width: 50%;
     animation: slide-up 2s ease-in infinite alternate-reverse both;
@@ -656,6 +675,10 @@ footer .container .col:nth-child(1) p {
   .container {
     max-width: 1140px;
   }
+
+  .section-desc {
+    margin: 2rem 0 1rem 0;
+  }
 }
 @media (min-width: 1400px) {
   .container {
@@ -671,4 +694,13 @@ footer .container .col:nth-child(1) p {
   100% {
     transform: translateY(-15px);
   }
+}
+
+.custom-shape-divider-top-1652762694 {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
 }
