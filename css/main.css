@@ -152,6 +152,8 @@ header .container {
 
 .logo {
   cursor: pointer;
+  position: relative;
+  z-index: 999;
 }
 .logo img {
   max-width: 100%;
@@ -160,6 +162,8 @@ header .container {
 
 .nav-icon {
   cursor: pointer;
+  position: relative;
+  z-index: 999;
 }
 
 .nav-icon svg {
