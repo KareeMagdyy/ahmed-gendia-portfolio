@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16.437" viewBox="0 0 16 16.437">
+  <g id="timeline" transform="translate(-0.219)">
+    <g id="Group_15" data-name="Group 15">
+      <path id="Path_618" data-name="Path 618" d="M14.568,0H13.541V7.7H12V8.732h1.541v7.7h1.027V13.355h1.541V12.328H14.568V4.109h1.541V3.082H14.568Z" transform="translate(-5.836)" fill="#52c41a"/>
+      <rect id="Rectangle_370" data-name="Rectangle 370" width="5" height="5" rx="1" transform="translate(11.219 1.219)" fill="#52c41a"/>
+      <rect id="Rectangle_371" data-name="Rectangle 371" width="5" height="5" rx="1" transform="translate(11.219 10.219)" fill="#52c41a"/>
+      <rect id="Rectangle_372" data-name="Rectangle 372" width="5" height="6" rx="1" transform="translate(0.219 5.219)" fill="#52c41a"/>
+    </g>
+  </g>
+</svg>
