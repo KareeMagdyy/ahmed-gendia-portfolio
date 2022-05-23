@@ -18,7 +18,7 @@
 }
 
 :root {
-  --clr-primary-100: hsl(276, 100%, 97%);
+  --clr-primary-100: hsl(190, 50%, 98%);
   --clr-primary-400: hsl(205, 46%, 17%);
   --clr-text-700: hsl(205, 46%, 17%);
   --clr-text-light: hsl(205, 46%, 10%);
@@ -42,6 +42,7 @@ body {
   font-family: "Metropolis";
   overflow-x: hidden;
   position: relative;
+  background-color: var(--clr-primary-100);
 }
 main {
   position: relative;
@@ -89,7 +90,7 @@ img {
 
 .btn-primary {
   background-color: var(--clr-primary-400);
-  color: var(--clr-white);
+  color: var(--clr-primary-100);
   transition: 350ms;
 }
 
@@ -97,10 +98,18 @@ img {
   font-size: 1rem;
   color: var(--clr-primary-400);
   background-color: var(--clr-primary-100);
-  border-radius: 2rem;
+  border-radius: 5rem;
   width: fit-content;
   padding: 0.5rem 1.5rem;
   margin: 0 auto 2rem auto;
+}
+
+.section-head svg {
+  font-size: 2rem;
+}
+
+.section-head h2 {
+  margin-top: 1rem;
 }
 .section-desc {
   margin: 2rem auto 1rem auto;
@@ -136,7 +145,7 @@ header {
   padding-top: 1.2rem;
   padding-bottom: 1.2rem;
   box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
-  background-color: #fff;
+  background-color: var(--clr-primary-100);
   position: fixed;
   width: 100%;
   top: 0;
@@ -187,7 +196,7 @@ header .container {
     rgb(233, 227, 236) 0%,
     rgb(220, 178, 248) 100%
   ); */
-  background-color: #fff;
+  background-color: var(--clr-primary-100);
   height: calc(100vh - 60px);
   bottom: 0;
   left: 0;
@@ -302,6 +311,24 @@ header .container {
 .about h2 {
   font-size: 1.75rem;
 }
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  gap: 2rem;
+}
+.about-me svg {
+  max-width: 400px;
+  max-height: 300px;
+  padding: 0 2rem;
+}
+
+.about-me h3 {
+  margin-top: 0;
+}
+
 .insights {
   margin-top: 5rem;
   display: grid;
@@ -639,6 +666,24 @@ footer .container .col:nth-child(1) p {
   .about h2 {
     font-size: 2.25rem;
   }
+
+  .about-me {
+    flex-direction: row;
+    gap: 7rem;
+  }
+
+  .about-me svg {
+    max-width: 100%;
+    width: 50%;
+    padding: 0;
+  }
+
+  .about-me h3 {
+    width: 50%;
+    text-align: start;
+    margin-top: 0;
+  }
+
   .card {
     text-align: start;
   }
