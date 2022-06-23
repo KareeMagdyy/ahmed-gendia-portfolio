@@ -18,7 +18,7 @@
 }
 
 :root {
-  --clr-primary-100: hsl(190, 50%, 98%);
+  --clr-primary-100: hsl(180, 45%, 98%);
   --clr-primary-400: hsl(205, 46%, 17%);
   --clr-text-700: hsl(205, 46%, 17%);
   --clr-text-light: hsl(205, 46%, 10%);
@@ -358,6 +358,9 @@ header .container {
 
 .clients .right {
   animation: slide-up 2s ease-in infinite alternate-reverse both;
+}
+.clients .right img {
+  border-radius: 1rem;
 }
 
 /* Testimonials  */
