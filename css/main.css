@@ -329,22 +329,22 @@ header .container {
   margin-top: 0;
 }
 
-.insights {
-  margin-top: 5rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2rem;
-}
-.about h2,
-.insights .card-desc {
+.about h2 {
   max-width: 25ch;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* Product Team */
-.product-team .container,
-.eng-team .container {
+/* Clients Team */
+.clients {
+  text-align: center;
+}
+.clients h2 {
+  max-width: 25ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+.clients .d-flex {
   text-align: center;
   display: flex;
   align-items: center;
@@ -352,9 +352,11 @@ header .container {
   flex-direction: column;
   gap: 3rem;
 }
-.eng-team .right {
+
+.clients .right {
   animation: slide-up 2s ease-in infinite alternate-reverse both;
 }
+
 /* Testimonials  */
 .testimonials {
   background: rgb(252, 247, 255);
@@ -690,22 +692,27 @@ footer .container .col:nth-child(1) p {
   .insights .card-desc {
     margin-left: 0;
   }
-  .product-team .container {
-    flex-direction: row-reverse;
+
+  .clients {
+    text-align: center;
   }
-  .product-team .container,
-  .eng-team .container {
+  .clients h2 {
+    max-width: 25ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .clients .d-flex {
     text-align: start;
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
     gap: 3rem;
   }
-  .section-head:not(.about .section-head) {
-    margin: 0 0 2rem 0;
-  }
-  .eng-team .container {
-    flex-direction: row;
+
+  .clients .right {
+    width: 50%;
   }
 
   .sign .container {
