@@ -23,6 +23,7 @@
   --clr-text-700: hsl(205, 46%, 17%);
   --clr-text-light: hsl(205, 46%, 10%);
   --clr-white: hsl(0, 0%, 100%);
+  --clr-accent: hsl(15, 72%, 58%);
 
   /* Colors to Used later 
   bg:#f6fbfc;
@@ -128,7 +129,10 @@ img {
   cursor: pointer;
   opacity: 0.9;
   transition: 400ms;
-  width: 40px;
+  padding: 0.6rem 0.85rem;
+  border-radius: 0.5rem;
+  background-color: var(--clr-accent);
+  text-align: center;
 }
 
 .to-top:hover,
@@ -242,7 +246,7 @@ header .container {
 .hero {
   position: relative;
   margin-top: 65px;
-  background: rgb(225, 107, 69);
+  background: var(--clr-accent);
   /* background: linear-gradient(
     180deg,
     rgb(255, 255, 255) 0%,
@@ -532,74 +536,42 @@ footer {
   margin-top: 10rem;
   padding-top: 3rem;
   padding-bottom: 1rem;
-  background-color: var(--clr-primary-100);
-}
-footer .container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
-  gap: 3rem;
+  background-color: var(--clr-accent);
+  border-radius: 3rem 3rem 0 0;
 }
 
-footer .container .col:nth-child(1) p {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
-  line-height: 1.25rem;
-  font-size: 0.75rem;
+.footer-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
 }
 
-.footer-social svg {
-  cursor: pointer;
+.social a {
+  font-size: 2rem;
+  transition: 350ms;
 }
 
-.footer-social svg + svg {
+.social a:hover {
+  color: var(--clr-primary-400);
+}
+
+.social a + a {
   margin-left: 1rem;
 }
 
-.col a {
-  display: block;
-  width: fit-content;
-  transition: 250ms;
-}
-
-.col a + a {
-  margin-top: 0.5rem;
-}
-
-.col a:hover,
-.col a:focus {
-  color: var(--clr-primary-400);
-}
-.col form {
-  position: relative;
-  width: 150px;
-}
-
-.col form input {
-  margin: 0;
-  border: none;
-  display: inline;
-  height: 32px;
-  padding: 1rem;
-  width: 100%;
-  font-weight: 500;
-  outline-color: var(--clr-primary-400);
-}
-
-.col form button {
-  position: absolute;
-  top: 0;
-  right: 10px;
-}
-
 .copy {
+  font-size: 0.85rem;
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 2rem;
   color: var(--clr-text-light);
 }
 .copy a {
   color: var(--clr-primary-400);
   font-weight: 500;
   transition: 350ms;
+  cursor: pointer;
 }
 
 .copy a:hover {
@@ -610,9 +582,6 @@ footer .container .col:nth-child(1) p {
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
-  }
-  .col form {
-    width: 200px;
   }
 }
 @media (min-width: 992px) {
@@ -732,6 +701,12 @@ footer .container .col:nth-child(1) p {
   }
   .sign .left {
     width: 50%;
+  }
+
+  .footer-flex {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 @media (min-width: 1200px) {
