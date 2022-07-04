@@ -549,7 +549,7 @@ footer {
 }
 
 .social a {
-  font-size: 2rem;
+  font-size: 1.5rem;
   transition: 350ms;
 }
 
@@ -559,6 +559,11 @@ footer {
 
 .social a + a {
   margin-left: 1rem;
+}
+
+.social-span {
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 .copy {
